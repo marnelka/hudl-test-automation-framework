@@ -21,7 +21,7 @@ class LoginPage extends Page {
     }
 
     public get rememberMeCheckbox () {
-        return $('[data-qa-id="remember-me-checkbox-label]')
+        return $('[data-qa-id="remember-me-checkbox-label"]')
     }
 
     public get checkedCheckbox () {
