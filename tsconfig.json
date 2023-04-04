@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "allowImportingTsExtensions": true,
+        "moduleResolution": "bundler",
+        "noEmit": true,
+        "moduleResolution": "node",
+        "module": "ESNext",
+        "types": [
+            "node",
+            "@wdio/globals/types",
+            "expect-webdriverio",
+            "@wdio/jasmine-framework"
+        ],
+        "target": "es2022"
+    }
+}
