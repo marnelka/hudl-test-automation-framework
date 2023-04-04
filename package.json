@@ -3,6 +3,8 @@
   "type": "module",
   "devDependencies": {
     "@types/jasmine": "^4.3.1",
+    "@types/jquery": "^3.5.16",
+    "@types/webdriverio": "^5.0.0",
     "@wdio/cli": "^8.6.9",
     "@wdio/jasmine-framework": "^8.6.9",
     "@wdio/local-runner": "^8.6.9",
