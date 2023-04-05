@@ -24,7 +24,6 @@ describe('Login functionality', () => {
 
     it('should login with valid credentials and remember me checkbox enabled', async () => {
        await loginPage.clickRememberMeCheckbox();
-       await browser.debug()
        await loginPage.login(validCredentials.username, validCredentials.password);
        await expect(libraryPage.navigationPanel).toBeExisting();
     });
@@ -34,6 +33,7 @@ describe('Login functionality', () => {
         await loginPage.open()
         await expect(libraryPage.navigationPanel).toBeExisting();
     })
+
 
 }) 
 });

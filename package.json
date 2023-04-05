@@ -16,5 +16,7 @@
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.ts"
+  
+
   }
 }
