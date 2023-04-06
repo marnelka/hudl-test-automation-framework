@@ -1,6 +1,8 @@
 import loginPage from '../pageobjects/login.page.ts';
 import libraryPage from '../pageobjects/library.page.ts';
-import { validCredentials, invalidCredentials, blankCredentials } from '../testdata/loginData.ts';
+import { invalidCredentials, blankCredentials } from '../testdata/loginData.ts';
+import { config } from 'dotenv';
+config();
 
 describe('Login functionality', () => {
     beforeAll(async () => await loginPage.open());
@@ -24,7 +26,7 @@ describe('Login functionality', () => {
 
     it('should login with valid credentials and remember me checkbox enabled', async () => {
        await loginPage.clickRememberMeCheckbox();
-       await loginPage.login(validCredentials.username, validCredentials.password);
+       await loginPage.login(process.env.USERNAME, process.env.PASSWORD);
        await expect(libraryPage.navigationPanel).toBeExisting();
     });
 
