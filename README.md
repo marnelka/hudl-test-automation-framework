@@ -40,5 +40,9 @@ Note: Be careful not to commit the .env file to version control, as it contains 
 This test automation framework covers several scenarios related to the login functionality of the Hudl web application. Some of the main test cases that are covered include:
 
 - Successful logins with valid credentials
-- Failed logins with incorrect passwords
-- Failed logins with non-existent usernames
+- Failed logins with incorrect credentials
+- Remember Me functionality
+
+Note: There is currently a known bug in the application that causes the "Should Remember the User" case to fail. Therefore, the related test case has been temporarily disabled until the bug is fixed.
+
+If I had more time for the assignment, I would explore additional scenarios to test depending on the project's requirements, such as testing different user roles and permissions, testing different types of input data, testing password reset functionality, and testing security features like session timeouts and password strength requirements.
