@@ -1,13 +1,16 @@
 # hudl-test-automation-framework
 WebdriverIO test automation framework for Hudl's login functionality. This repository contains automated tests for the login feature of the Hudl web application, implemented using WebdriverIO and JavaScript.
 
-Why WebDriverio? https://webdriver.io/docs/why-webdriverio
+Why WebDriverio? https://webdriver.io/docs/why-webdriverio 
+
+Note: The choice of tools also highly depends on the project and its needs.
 
 *Setup*
 
 - Clone the repository using the SSH URL ([Using SSH keys with GitHub](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh))
+- Install Homebrew on your system (if not already installed)
 - Download and install nvm ([Instructions](https://github.com/nvm-sh/nvm))
-- Use nvm to install the latest stable Node version 
+- Use nvm to install the latest stable Node version (like nvm install 18 && nvm alias default 18)
 - Run `npm install` in hudl-test-automation-framework directory
 
 *Running the tests*
@@ -31,3 +34,11 @@ WebDriverio has an awesome feature called browser.debug(). This will pause the t
 - That's it! Now your environment variables should be properly set for this project to work. When you run the application, it will automatically load the environment variables from the .env file.
 
 Note: Be careful not to commit the .env file to version control, as it contains sensitive information. You should add the .env file to your .gitignore file to make sure it is not accidentally committed.
+
+*Test Coverage*
+
+This test automation framework covers several scenarios related to the login functionality of the Hudl web application. Some of the main test cases that are covered include:
+
+- Successful logins with valid credentials
+- Failed logins with incorrect passwords
+- Failed logins with non-existent usernames
