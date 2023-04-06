@@ -7,7 +7,7 @@ import Page from './page.js';
  */
 class HomePage extends Page {
     /**
-     * define selectors using getter methods
+     * selectors using getter methods
      */
     public get navigationPanel () {
         return $('.hui-globalnav');

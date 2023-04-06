@@ -3,7 +3,7 @@ import { ChainablePromiseElement } from 'webdriverio';
 import Page from './page.ts';
 
 class LoginPage extends Page {
-    /* selectors */
+    /* selectors using getter methods */
     public get usernameInput () {
         return $('[data-qa-id="email-input"]');
     }
